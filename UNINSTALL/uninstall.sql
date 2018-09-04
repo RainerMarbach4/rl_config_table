@@ -1,4 +1,3 @@
-# $Id$
 ##########################################################################
 # config_table 1.0.2 Uninstall - 2018-09-03 :: hugo13
 # NUR AUSFÜHREN WENN SIE DAS MODUL AUS DER DATENBANK ENTFERNEN WOLLEN!!!!!
