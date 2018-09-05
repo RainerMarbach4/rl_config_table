@@ -1,12 +1,12 @@
 <?php
 /**
 * @package rl_config_table
-* @copyright Copyright 2003-2016 Zen Cart Development Team
+* Author:  rainer@langheiter.com  https://langheiter.com
+*          david@langheiter.com
+* @copyright Copyright 2003-2018 Zen Cart Development Team
 * @copyright Portions Copyright 2003 osCommerce
 * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
-* @version $Id: config_table.php 2016-07-19 18:13:51Z webchills $
 */
-
 require('includes/application_top.php');
 
 function makeCSS(){

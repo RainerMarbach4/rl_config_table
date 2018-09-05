@@ -1,11 +1,11 @@
 <?php
 /**
-* @package pdf Rechnung
-* @copyright Copyright 2005-2018 langheiter.com 
-* @copyright Copyright 2003-2016 Zen Cart Development Team
+* @package rl_config_table
+* Author:  rainer@langheiter.com  https://langheiter.com
+*          david@langheiter.com
+* @copyright Copyright 2003-2018 Zen Cart Development Team
 * @copyright Portions Copyright 2003 osCommerce
 * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
-* @version $Id: rl_config_table_a11.php 2016-06-19 07:19:17Z webchills $
 */
 
 $show_all_errors = false;
