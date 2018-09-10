@@ -5,6 +5,7 @@
 * @copyright Copyright 2003-2018 Zen Cart Development Team
 * @copyright Portions Copyright 2003 osCommerce
 * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
+* @version $Id: 1_0_3.php 2018-09-10 16:13:51Z hugo13 $
 */
 
 $ins = "INSERT INTO  " . TABLE_CONFIGURATION . "  (configuration_title, configuration_key, 
@@ -46,6 +47,4 @@ if (!zen_page_key_exists('config_table_config')) {
         'FILENAME_CONFIGURATION', 'gID=' . $group, 'configuration', 'Y', $group);
 }
 
-$messageStack->add('Enabled ' . BOX_CONFIGURATION_TABLE .' Menu.', 'success');    
-
-return;
+$messageStack->add('Konfigurationstabelle Konfiguration und Tools erfolgreich hinzugefügt.', 'success');  

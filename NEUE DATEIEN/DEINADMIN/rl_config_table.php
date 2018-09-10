@@ -1,11 +1,10 @@
 <?php
 /**
 * @package rl_config_table
-* Author:  rainer@langheiter.com  https://langheiter.com
-*          david@langheiter.com
 * @copyright Copyright 2003-2018 Zen Cart Development Team
 * @copyright Portions Copyright 2003 osCommerce
 * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
+* @version $Id: config_table.php 2018-09-10 18:13:51Z hugo13 $
 */
 require('includes/application_top.php');
 
@@ -39,7 +38,7 @@ function getAjaxPath($p=0){
     if($p==0){
         return "'" . DIR_WS_ADMIN . "rl_config_table_a11.php" . "'";
     } else {
-        // '/zc155/slEpt-FhD-Sorry/configuration.php?gID='
+        
         return "'" . DIR_WS_ADMIN . "configuration.php?gID=" . "'";
     }  
 }
@@ -193,10 +192,11 @@ if (!is_null($_GET['token']) && $_GET['token'] == 'new') {
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
         </div>
         </div>         -->
+         <!--
         <script type="text/javascript">
             $("#rl_config_table_edit").load("http://localhost/zc155/slEpt-FhD-Sorry/configurationEdit.php?gID=37&cID=696&action=edit");
         </script>         
-
+ -->
     </body>
 </html>
 <?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
