@@ -20,7 +20,7 @@ if($languageID==1){
     FROM configuration_group INNER JOIN configuration ON configuration_group.configuration_group_id = configuration.configuration_group_id;';
 
 }else{
-    $sql = 'SELECT configuration.configuration_id, configuration_group.language_id, configuration_group.configuration_group_title, configuration.configuration_title, configuration.configuration_key, configuration.configuration_value, configuration.configuration_description, configuration_language.configuration_description, configuration_group.configuration_group_id, configuration.configuration_id
+    $sql = 'SELECT configuration.configuration_id, configuration_group.language_id, configuration_group.configuration_group_title, configuration_language.configuration_title, configuration.configuration_key, configuration.configuration_value, configuration.configuration_description, configuration_language.configuration_description, configuration_group.configuration_group_id, configuration.configuration_id
     FROM (configuration_group INNER JOIN configuration ON configuration_group.configuration_group_id = configuration.configuration_group_id) INNER JOIN configuration_language ON configuration.configuration_key = configuration_language.configuration_key 
     WHERE (((configuration_group.language_id)=' . (int)$_SESSION['languages_id'] . '));';
 }
