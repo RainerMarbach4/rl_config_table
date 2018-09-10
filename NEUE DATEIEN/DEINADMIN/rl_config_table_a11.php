@@ -9,7 +9,6 @@
 */
 
 $show_all_errors = false;
-
 require('includes/application_top.php');
 
 $multiLingual = rl_tools::isMultiLingual();   
@@ -24,7 +23,7 @@ if($languageID==1){
     FROM (configuration_group INNER JOIN configuration ON configuration_group.configuration_group_id = configuration.configuration_group_id) INNER JOIN configuration_language ON configuration.configuration_key = configuration_language.configuration_key 
     WHERE (((configuration_group.language_id)=' . (int)$_SESSION['languages_id'] . '));';
 }
-//rldp($sql, 'SQL');
+
 $result = $db->Execute($sql);     
 
 if($result == false) {
