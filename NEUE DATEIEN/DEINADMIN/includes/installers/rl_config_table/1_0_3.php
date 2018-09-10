@@ -37,7 +37,7 @@ if ($multiLingual) {
 }
 
 if (!zen_page_key_exists('config_table_menu')) {
-    // Add the link to MailBeez
+    
     zen_register_admin_page('config_table_menu', 'BOX_TOOLS_CONFIG_TABLE',
         'RL_CONFIG_TABLE_ADMIN_FILENAME', '', 'tools', 'Y', 40);
 }

@@ -1,10 +1,11 @@
 <?php
 /**
 * @package rl_config_table
+* @copyright Copyright 2016-2018 rainer@langheiter.com
 * @copyright Copyright 2003-2018 Zen Cart Development Team
 * @copyright Portions Copyright 2003 osCommerce
 * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
-* @version $Id: config_table.php 2018-09-10 18:13:51Z hugo13 $
+* @version $Id: config_table.php 2018-09-10 21:36:51Z hugo13 $
 */
 require('includes/application_top.php');
 
@@ -85,24 +86,24 @@ if (!is_null($_GET['token']) && $_GET['token'] == 'new') {
             <table id="rl_config_table" class="display" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Gruppe</th>
-                        <th>GID</th>
-                        <th>Option</th>
-                        <th>CID</th>
-                        <th>Key</th>
-                        <th>Wert</th>
-                        <th id='desc'>Beschreibung</th>
+                        <th><?php echo RL_CONFIG_TABLE_GROUP; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_GID; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_OPTION; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_CID; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_KEY; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_VALUE; ?></th>
+                        <th id='desc'><?php echo RL_CONFIG_TABLE_VALUEDESCRIPTION; ?></th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Gruppe</th>
-                        <th>GID</th>
-                        <th>Option</th>
-                        <th>CID</th>
-                        <th>Key</th>
-                        <th>Wert</th>
-                        <th>Beschreibung</th>
+                        <th><?php echo RL_CONFIG_TABLE_GROUP; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_GID; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_OPTION; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_CID; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_KEY; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_VALUE; ?></th>
+                        <th><?php echo RL_CONFIG_TABLE_VALUEDESCRIPTION; ?></th>
                     </tr>
                 </tfoot>
             </table>
